@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Portfolio — PRATIK LUITEL</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="logo" href="#">PRATIK LUITEL</a>
+			<nav class="nav">
+				<a href="#about">About</a>
+				<a href="#projects">Projects</a>
+				<a href="#skills">Skills</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero" id="home">
+			<div class="container">
+				<h1>Hi, I'm <span class="accent">PRATIK LUITEL</span></h1>
+				<p class="lead">A passionate web developer creating delightful, accessible experiences on the web.</p>
+				<p class="cta-row">
+					<a class="btn" href="#projects">View Projects</a>
+					<a class="btn ghost" href="#contact">Get in touch</a>
+				</p>
+			</div>
+		</section>
+
+		<section class="about container" id="about">
+			<h2>About</h2>
+			<div class="about-grid">
+				<div class="about-text">
+					<p>I build responsive websites and small web apps. I focus on clean interfaces, performance, and accessibility. Currently learning advanced JavaScript patterns and progressive web apps.</p>
+					<p>Location: Biratnagar • Email: <a href="mailto:you@example.com">pratikluitel03@gmail.com</a></p>
+				</div>
+				<div class="about-card">
+					<div class="avatar">YN</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="projects container" id="projects">
+			<h2>Projects</h2>
+			<div class="grid">
+				<article class="card">
+					<h3>Project One</h3>
+					<p>A short description of the project. Technologies: HTML, CSS, JavaScript.</p>
+					<p><a class="link" href="#">Live</a> · <a class="link" href="#">Source</a></p>
+				</article>
+				<article class="card">
+					<h3>Project Two</h3>
+					<p>A short description of the project. Technologies: React, Node.js.</p>
+					<p><a class="link" href="#">Live</a> · <a class="link" href="#">Source</a></p>
+				</article>
+				<article class="card">
+					<h3>Project Three</h3>
+					<p>A short description of the project. Technologies: PHP, MySQL.</p>
+					<p><a class="link" href="#">Live</a> · <a class="link" href="#">Source</a></p>
+				</article>
+			</div>
+		</section>
+
+		<section class="skills container" id="skills">
+			<h2>Skills</h2>
+			<ul class="skills-list">
+				<li>HTML & CSS</li>
+				<li>JavaScript</li>
+				<li>React</li>
+				<li>Node.js</li>
+				<li>Responsive Design</li>
+			</ul>
+		</section>
+
+		<section class="contact container" id="contact">
+			<h2>Contact</h2>
+			<p>If you'd like to work together, send a message or email me at <a href="mailto:you@example.com">pratikluitel03@gmail.com</a>.</p>
+			<form class="contact-form" action="mailto:you@example.com" method="post" enctype="text/plain">
+				<label for="name">Name</label>
+				<input id="name" name="name" required>
+
+				<label for="email">Email</label>
+				<input id="email" name="email" type="email" required>
+
+				<label for="message">Message</label>
+				<textarea id="message" name="message" rows="5" required></textarea>
+
+				<button class="btn" type="submit">Send</button>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>&copy; <span id="year"></span> Pratik luitel — Built with HTML & CSS</p>
+		</div>
+	</footer>
+
+	<script>
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
