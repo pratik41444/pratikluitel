@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- YO HEADER HO -->
     <header>
         <div class="container header-content">
             <div class="profile-icon">
@@ -22,13 +20,14 @@
             <div class="social-links">
                 <a href="https://github.com/pratik41444" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/pratik-luitel-thevibecoder/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://discord.com/channels/1367871667283427379/1367871667283427382" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://discord.com/channels/1367871667283427379/1367871667283427382" target="_blank" class="discord-logo">
+                    <i class="fab fa-discord"></i>
+                </a>
                 <a href="https://www.instagram.com/pratikluitel__/" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </header>
 
-    <!-- YO NAV BAR -->
     <nav>
         <div class="container">
             <a href="#" class="logo">PL</a>
@@ -37,13 +36,17 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#layout">Layout</a></li>
+                <li><a href="#slider">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
         </div>
     </nav>
 
-    <!-- ABOUT SEC -->
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">About Me</h2>
@@ -61,14 +64,60 @@
                         a difference.
                     </p>
                     <div class="skills">
-                        <span class="skill">HTML</span>
-                        <span class="skill">CSS</span>
-                        <span class="skill">JavaScript</span>
-                        <span class="skill">React</span>
-                        <span class="skill">Video Editing</span>
-                        <!-- <span class="skill">Responsive Design</span> -->
-                        <!-- <span class="skill">UI/UX</span> -->
-                        <span class="skill">PHP</span>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Video Editing</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PHP</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
                     </div>
                     <a href="#contact" class="btn" style="margin-top: 1.5rem;">Get In Touch</a>
                 </div>
@@ -93,55 +142,136 @@
         </div>
     </section>
 
-    <!-- ===== PROJECTS SECTION ===== -->
-    <section id="projects" class="section">
+    <!-- <section id="media" class="section">
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="images/quizapp.png" alt="Quiz App Screenshot">
-                        <div class="project-overlay">
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                        </div>
+            <h2 class="section-title">Media & Canvas</h2>
+            <div class="media-content">
+                <div class="media-item">
+                    <h3>Video Introduction</h3>
+                    <div class="video-placeholder">
+                        <p>Your video here</p>
                     </div>
-                    <div class="project-info">
-                        <h3>Quiz Application</h3>
-                        <p>An interactive quiz application with multiple categories, score tracking. Features dynamic question loading and result analysis.</p>
-                        <div class="project-links">
-                            <a href="http://localhost/PRATIK/" class="btn" target="_blank">Live Demo</a>
-                        </div>
-                    </div>
+                    <p>A brief introduction about my work and passion for web development.</p>
                 </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="images/weatherapp.png" alt="Weather App Screenshot">
-                        <div class="project-overlay">
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>API</span>
-                            </div>
-                        </div>
+                
+                <div class="media-item">
+                    <h3>Background Audio</h3>
+                    <div class="audio-placeholder">
+                        <p>Your audio here</p>
                     </div>
-                    <div class="project-info">
-                        <h3>Weather Application</h3>
-                        <p>A responsive weather application that displays current conditions and forecasts using API data. However, due to some reasons related to API, it is currently out of reach  (Only available from localhost).</p>
-                        <div class="project-links">
-                            <a href="http://localhost/prototype2/" class="btn" target="_blank">Live Demo</a>
-                        </div>
+                    <p>Some relaxing background music while browsing my portfolio.</p>
+                </div>
+                
+                <div class="media-item">
+                    <h3>Interactive Canvas</h3>
+                    <canvas id="myCanvas" width="400" height="200"></canvas>
+                    <p>An interactive canvas drawing that responds to mouse movements.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="media" class="section">
+    <div class="container">
+        <h2 class="section-title">Media & Canvas</h2>
+        <div class="media-content">
+            <div class="media-item">
+                <h3>Video Introduction</h3>
+                <video controls width="100%" poster="images/video-poster.jpg">
+                    <source src="media/intro-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>A brief introduction about my work and passion for web development.</p>
+            </div>
+            
+            <div class="media-item">
+                <h3>Background Audio</h3>
+                <audio controls style="width: 100%;">
+                    <source src="media/background-music.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Some relaxing background music while browsing my portfolio.</p>
+            </div>
+            
+            <div class="media-item">
+                <h3>Interactive Canvas</h3>
+                <canvas id="myCanvas" width="400" height="200"></canvas>
+                <p>An interactive canvas drawing that responds to mouse movements.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="layout" class="section">
+        <div class="container">
+            <h2 class="section-title">Layout Systems</h2>
+            <div class="layout-content">
+                <div class="layout-note">
+                    <h3>Flexbox vs Grid</h3>
+                    <p><strong>Flexbox</strong> is designed for one-dimensional layouts - either a row OR a column. It's perfect for components where you need to align items in a single direction.</p>
+                    <p><strong>CSS Grid</strong> is designed for two-dimensional layouts - both rows AND columns simultaneously. It's ideal for complex page layouts where you need precise control over both dimensions.</p>
+                    <p>In this portfolio, I'm using <strong>CSS Grid</strong> for the main layout sections (projects, about, contact) because it provides better control over complex responsive layouts, while using <strong>Flexbox</strong> for smaller components like navigation and social links.</p>
+                </div>
+                <div class="layout-demo">
+                    <div class="grid-demo">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                        <div class="grid-item">5</div>
+                        <div class="grid-item">6</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== CONTACT SECTION ===== -->
+    <section id="slider" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slides">
+                        <!-- Quiz Application -->
+                        <div class="slide active">
+                            <div class="slide-content quiz-app">
+                                <h3>Quiz Application</h3>
+                                <p>An interactive quiz application with multiple categories, score tracking. Features dynamic question loading and result analysis.</p>
+                                <div class="project-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <button class="btn view-project" data-url="http://localhost/PRATIK/">Live Demo</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Weather Application -->
+                        <div class="slide">
+                            <div class="slide-content weather-app">
+                                <h3>Weather Application</h3>
+                                <p>A responsive weather application that displays current conditions and forecasts using API data. However, due to some reasons related to API, it is currently out of reach (Only available from localhost).</p>
+                                <div class="project-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>API</span>
+                                </div>
+                                <button class="btn view-project" data-url="http://localhost/prototype2/">Live Demo</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-btn prev-btn">&#10094;</button>
+                    <button class="slider-btn next-btn">&#10095;</button>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="section">
         <div class="container">
             <h2 class="section-title">Contact Me</h2>
@@ -184,22 +314,26 @@
                         </div>
                     </div>
                 </div>
-                <form action="https://formspree.io/f/your-form-id" method="POST">
+                <form id="contactForm">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="nameError"></span>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="emailError"></span>
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject</label>
                         <input type="text" id="subject" name="subject" required>
+                        <span class="error-message" id="subjectError"></span>
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error-message" id="messageError"></span>
                     </div>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
@@ -207,70 +341,21 @@
         </div>
     </section>
 
-    <!-- ===== FOOTER ===== -->
     <footer>
         <div class="container footer-content">
             <p>&copy; <span id="year"></span> PRATIK LUITEL. All rights reserved.</p>
             <div class="footer-links">
                 <a href="#about">About</a>
-                <a href="#projects">Projects</a>
+                <a href="#slider">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Update year garxah auto
-        document.getElementById("year").textContent = new Date().getFullYear();
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
-        // Mobile menu toggle
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-
-        // Form submission handling
-        const contactForm = document.querySelector('form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Thank you for your message! I will get back to you soon.');
-                this.reset();
-            });
-        }
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe elements for animation
-        document.querySelectorAll('.project-card, .feature-card, .contact-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>

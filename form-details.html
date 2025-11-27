@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Details</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form-details {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: var(--dark-light);
+            border-radius: 15px;
+            border: 1px solid var(--light);
+        }
+        
+        .detail-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--light);
+        }
+        
+        .detail-label {
+            font-weight: 600;
+            color: var(--primary);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .detail-value {
+            color: var(--white);
+        }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">PL</a>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Form Submission Details</h2>
+            <div class="form-details" id="formDetails">
+                <p>No form data found. Please submit the form first.</p>
+            </div>
+            <a href="index.html#contact" class="btn back-btn">Back to Contact</a>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const formDetails = document.getElementById('formDetails');
+            const formData = JSON.parse(localStorage.getItem('contactFormData'));
+            
+            if (formData) {
+                formDetails.innerHTML = `
+                    <div class="detail-item">
+                        <span class="detail-label">Name:</span>
+                        <span class="detail-value">${formData.name}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Email:</span>
+                        <span class="detail-value">${formData.email}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Subject:</span>
+                        <span class="detail-value">${formData.subject}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Message:</span>
+                        <span class="detail-value">${formData.message}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Submitted on:</span>
+                        <span class="detail-value">${new Date(formData.timestamp).toLocaleString()}</span>
+                    </div>
+                `;
+                
+                // Clear the stored data after displaying
+                localStorage.removeItem('contactFormData');
+            }
+        });
+    </script>
+</body>
+</html>
